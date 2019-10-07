@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MuteAudio : MonoBehaviour
 {
+    bool isMute;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,11 @@ public class MuteAudio : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Mute()
+    {
+        isMute = !isMute;
+        AudioListener.volume = isMute ? 0 : 1;
     }
 }
