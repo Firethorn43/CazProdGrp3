@@ -36,4 +36,11 @@ public class UIMove : MonoBehaviour
         }
         transform.position = Vector3.MoveTowards(transform.position, waypoints[current].transform.position, Time.deltaTime * speed);
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Fish"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
 }

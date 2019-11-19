@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: bc840807981d3c743b73a3147f12a11d
+  - enabled: 1
+    path: Assets/Scenes/PenguinTest.unity
+    guid: 57f707a9cb200104aaf07cdb52dfa97d
   m_configObjects: {}
